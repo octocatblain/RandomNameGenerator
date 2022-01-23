@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Random User Generator</title>
+    <!--    <h4>A <a href="https://vuejs.org/" target="_blank">Vue.JS</a> Web App</h4>
+-->
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">RANDOM USER GENERATOR</h1>
+        </div>
+    </header>
+    <div id="outline">
+        <div id="app">
+            <img :class="gender":src="picture" :alt="'{firstName} ${lastName}'">
+            <h1>{{firstName}} {{lastName}}</h1>
+            <h4>Email: {{email}}</h4>
+            <button v-on:click="getUser()":class="gender">Generate Random User</button>
+    
+            <section>
+                <div class="details" >
+                    <h4>Phone Number: {{cell}}</h4>
+                    <h4>Date of Birth: {{age}} yrs.</h4>
+                    <h4>City: {{city}}</h4>
+                    <h4>Country: {{country}}</h4>
+                </div>
+            </section>
+            <div class="copyright">
+                <p>Copyright &copy; 2022 - <script>document.write(new Date().getFullYear())</script> <a href="https://xblainm.github.io" target="_blank">Blain Muema</a></p>
+            </div>           
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3.2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
